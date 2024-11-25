@@ -1,0 +1,113 @@
+/* Estilização adicional para uma aparência mais moderna */
+
+/* Corpo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #0d0dfb, #5454ac);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    font-size: 2rem;
+}
+
+.header img {
+    width: 10px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+
+
+/* Botões */
+button[type="submit"] {
+    background: linear-gradient(to right, #5c5cfc, #0d0dfb);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block; /* Faz o botão se comportar como um bloco */
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Inputs, Textareas e Selects */
+textarea, input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Labels */
+label {
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0d0dfb;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+footer ul li a:hover {
+    color: #ffd700;
+}
+
+/* Resposta visual para selects */
+select:focus {
+    border-color: #0d0dfb;
+    outline: none;
+    box-shadow: 0 0 5px #0d0dfb;
+}
+
+/* Melhoria para dispositivos móveis */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
